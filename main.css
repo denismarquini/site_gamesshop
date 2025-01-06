@@ -17,9 +17,8 @@ form button {
 }
 
 header {
-    background-image: url('./imagens/familia.jpg'); /* Insira o caminho da imagem */
-    background-size: cover;
-    background-position: center -270px;
+    background-size: cover; 
+    background-position: center center; 
     background-repeat: no-repeat;
     color: white;
     padding: 20px;
@@ -27,10 +26,17 @@ header {
 }
 
 header img {
-    width: 250px;
     float: left;
     margin-right: 15px;
-    margin-top: -20px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
 }
 
 header nav li {
@@ -183,4 +189,30 @@ footer {
 
 #about .container p {
     text-align: left; /* Garante que os parágrafos fiquem à esquerda */
+}
+
+.social-links img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whatsapp, .social-media, .address {
+        max-width: 100%;
+    }
+}
+
+footer {
+    background-color: #1e2a47; /* Um tom mais escuro para o fundo */
+    color: #ffffff;
 }
